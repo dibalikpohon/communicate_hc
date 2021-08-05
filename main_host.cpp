@@ -57,7 +57,7 @@ int main(int argc, char* argv[])
         }
     );
 
-    asio::io_context::count_type n =  context.run();
+    context.run();
     input_thread.join();
     output_thread.join();
 
